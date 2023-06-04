@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Survey Form</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">Responsive Web Design Survey Form</h1>
+  <p id="description">Thank you for taking the time to help improve this course!</p>
+  <form id="survey-form" action="#">
+    <fieldset id="user-info-fieldset">
+      <label id="name-label" for="name">Name: <input type="text" id="name" name="name" placeholder="Name" required></label>
+      <label id="email-label" for="email">Email: <input type="email" id="email" name="email" placeholder="Email" required></label>
+      <label id="number-label" for="number">Age: <input type="number" id="number" name="number" placeholder="Age" min="16" max="120"></label>
+      <label for="dropdown" id="dropdown-label">Select the option that best discribes you: 
+        <select id="dropdown" name="dropdown">
+          <option value="">Select one</option>
+          <option value="1">Student</option>
+          <option value="2">Just interest in the area</option>
+          <option value="3">Full time tech job</option>
+          <option value="4">Looking for a career change</option>
+          <option value="5">Prefer not to say</option>
+          <option value="6">Other</option>
+        </select>
+        </label>
+    </fieldset>
+    <hr>
+    <fieldset id="opinion-fieldset">
+      <legend>What's opinion about this course?</legend>
+      <label for="opinion-very-good"><input id="opinion-very-good" type="radio" name="opinion" class="inline" value="very-good">Very good</label>
+      <label for="opinion-good"><input id="opinion-good" type="radio" name="opinion" class="inline" value="good">Good</label>
+      <label for="opinion-neutral"><input id="opinion-neutral" type="radio" name="opinion" class="inline" value="neutral">Neutral</label>
+      <label for="opinion-bad"><input id="opinion-bad" type="radio" name="opinion" class="inline" value="bad">Bad</label>
+      <label for="opinion-really-bad"><input id="opinion-really-bad" type="radio" name="opinion" class="inline" value="really bad">Really bad</label>
+    </fieldset>
+    <hr>
+    <fieldset id="good-fieldset">
+      <legend>Select what's good about this course:</legend>
+      <label for="good-projects"><input id="good-projects" type="checkbox" value="good-projetcs" class="inline">Projects</label>
+      <label for="good-explanation"><input id="good-explanation" type="checkbox" value="good-explanation" class="inline">Explanation</label>
+      <label for="good-theory-exercise"><input id="good-theory-exercise" type="checkbox" value="good-theory-exercise" class="inline">Union of theory with practical exercises</label>
+      <label for="good-evaluation"><input id="good-evaluation" type="checkbox" value="good-evaluation" class="inline">Evaluation projects</label>
+      <label for="good-nothing"><input id="good-nothing" type="checkbox" value="good-nothing" class="inline">Nothing</label>
+    </fieldset>
+    <hr>
+    <fieldset id="improve-fieldset">
+      <legend>Select what needs to be improved:</legend>
+      <label for="improve-project"><input id="improve-project" type="checkbox" value="improve-projects" class="inline">Projects</label>
+      <label for="improve-explanation"><input id="improve-explanation" type="checkbox" value="improve-explanation" class="inline">Explanation</label>
+      <label for="improve-evaluation"><input id="improve-evaluation" type="checkbox" value="improve-evaluation" class="inline">Evaluation projects</label>
+      <label for="improve-nothing"><input id="improve-nothing" type="checkbox" value="improve-nothing" class="inline">Nothing</label>
+    </fieldset>
+    <hr>
+    <fieldset id="feedback-fieldset">
+      <legend>Give feedback or suggestions on how to improve this course:</legend>
+        <label for="feedback">
+          <textarea id="feedback" name="feedback" rows="8" cols="30" placeholder="Write your ideas here..."></textarea>
+        </label>
+    </fieldset>
+    <input type="submit" id="submit" name="submit" value="Submit">
+  </form>
+</body>
+</html>
