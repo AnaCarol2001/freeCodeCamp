@@ -30,7 +30,8 @@ header h1{
 
 #img-div{
   margin: auto;
-  max-width: 70vw;
+  width: 90vw;
+  max-width: 1000px;
   background-color: #333333;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   /*backgroun-color: #DEB887;
@@ -38,6 +39,7 @@ header h1{
 }
 #img-div img{
   display: block;
+  object-fit: cover;
   max-width: 100%;
   height: auto;
   position: center;
@@ -60,19 +62,21 @@ main h2{
 }
 main ul{
   padding: 12px;
-  max-width: 50vw;
+  width: 80vw;
+  max-width: 800px;
   margin: 0 auto;
 }
 main ul li{
   margin: 12px 0;
 }
 
-main ul li span{
+main ul li span:not(.intend){
   /*color: #DEB887;*/
   font-weight: 600;
 }
 
 main h3{
+  margin: 0 12px;
   text-align: center;
   margin-bottom: 64px;
 }
@@ -85,6 +89,7 @@ a:visited{
   color: #DEB887;
 }
 .intend{
+  display: inline-block;
   margin: 12px 24px 0;  
   font-style: italic;
   font-weight: 600;
