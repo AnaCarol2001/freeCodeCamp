@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,300;0,600;1,100&display=swap');
+
+@media (prefers-reduced-motion:  no-preference){
+	*{
+		scroll-behavior: smooth;
+    }
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: #181818;
+  color: white;
+  font-family: 'Exo', sans-serif;
+}
+
+header{
+  text-align: center;
+  margin: 48px auto;
+  padding: 12px;
+}
+header h1{
+  margin: 16px auto;
+  color: #DEB887;
+}
+
+#img-div{
+  margin: auto;
+  max-width: 70vw;
+  background-color: #333333;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /*backgroun-color: #DEB887;
+  color: #181818;*/
+}
+#img-div img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  position: center;
+  margin: auto;
+}
+
+#img-div figcaption{
+  padding: 8px;
+  font-size: 0.8rem;
+}
+
+main{
+  margin: 0 auto;
+ 
+}
+
+main h2{
+  margin: 36px 0 0 0;
+  text-align: center;
+}
+main ul{
+  padding: 12px;
+  max-width: 50vw;
+  margin: 0 auto;
+}
+main ul li{
+  margin: 12px 0;
+}
+
+main ul li span{
+  /*color: #DEB887;*/
+  font-weight: 600;
+}
+
+main h3{
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+a{
+  color: white;
+}
+
+a:visited{
+  color: #DEB887;
+}
+.intend{
+  margin: 12px 24px 0;  
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: 1; 
+  font-size: 0.9rem;
+}
