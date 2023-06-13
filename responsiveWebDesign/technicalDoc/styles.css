@@ -1,0 +1,140 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&family=Libre+Franklin&family=Proza+Libre&family=Work+Sans&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: #13161a;
+  color: #ece9e5;
+  /*font-family: 'Libre Franklin', sans-serif;*/
+  /*font-family: 'Proza Libre', sans-serif;*/
+  /*font-family: 'Work Sans', sans-serif;*/
+  font-family: 'Alegreya Sans', sans-serif;
+  letter-spacing: 0.5;
+}
+#openNav, #closeNav{
+  display: none;
+}
+
+#navbar{
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 100%;
+  overflow: auto;
+
+  text-transform: uppercase;
+  padding: 1rem;
+  margin: 0.5rem;
+  margin-top: 0;
+  padding-top: 40px;
+  border-right: 2px solid #34363a;
+}
+
+#navbar header{
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+#navbar ul{
+   list-style: none;
+}
+
+#navbar ul li{
+   padding: 0.7rem 0;
+   border-bottom: 1px solid #34363a;
+}
+
+#navbar ul li:hover{
+  padding-left: 8px;
+  /*border: none;*/
+  background: #585a5d;
+  border-radius: 4px;
+  
+}
+
+#navbar a{
+  text-decoration: none;
+  color: #ece9e5;
+}
+
+#main-doc{
+  width: 65%;
+  margin: 40px 0;
+  margin-left: 35%;
+  padding-right: 12px;
+  padding-left: 16px;
+}
+
+.main-section{
+  margin-bottom: 32px;
+  margin-right: 24px;
+}
+
+.main-section header{
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.main-section article{
+  border-bottom: 1px solid #34363a;
+  padding-bottom: 1.5rem;
+}
+.main-section .none-border{
+  border-bottom: none;
+  padding-bottom: none;
+}
+.main-section article p, .main-section article ul li {
+  padding: 0.5rem;
+}
+
+.main-section article ul li{
+  margin-left: 3rem;
+}
+
+code{
+  display: block;
+  margin: 0.5rem;
+  padding: 1rem;
+  background: #34363a;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px){
+    
+    body{
+        width: 768px;
+    }
+  #navbar{
+    background: #13161a;
+    width: 250px;
+    display: none;
+  }
+  #main-doc{
+    margin: 40px 0 40px auto;
+    width: 85%;
+  }
+  
+  #openNav, #closeNav{
+  background: #34363a;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: block;
+  }
+
+  #openNav{
+    position: fixed;
+    margin-left: 16px;
+  }
+  #closeNav{
+    margin-bottom: 15px; 
+    margin-left: auto;
+    display: block;
+  }
+}
