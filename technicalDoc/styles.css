@@ -16,9 +16,6 @@ body{
   font-family: 'Alegreya Sans', sans-serif;
   letter-spacing: 0.5;
 }
-#openNav, #closeNav{
-  display: none;
-}
 
 #navbar{
   display: block;
@@ -106,35 +103,12 @@ code{
 }
 
 @media (max-width: 768px){
-    
-    body{
-        width: 768px;
-    }
+
   #navbar{
-    background: #13161a;
-    width: 250px;
-    display: none;
-  }
-  #main-doc{
-    margin: 40px 0 40px auto;
-    width: 85%;
+    max-width: 250px;
   }
   
-  #openNav, #closeNav{
-  background: #34363a;
-  color: white;
-  border: none;
-  cursor: pointer;
-  display: block;
-  }
-
-  #openNav{
-    position: fixed;
-    margin-left: 16px;
-  }
-  #closeNav{
-    margin-bottom: 15px; 
-    margin-left: auto;
-    display: block;
+  .main-section{
+    margin-right: auto;
   }
 }

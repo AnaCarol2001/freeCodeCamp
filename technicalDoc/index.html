@@ -10,9 +10,7 @@
 
   </head>
   <body>
-    <button id="openNav" onclick="open_nav()"><span class="material-symbols-outlined">menu</span></button>
     <nav id="navbar" class="inline">
-       <button id="closeNav" onclick="close_nav()"><span class="material-symbols-outlined">close</span></button>
       <header id="navbar-header">JS Documentation</header>
       <ul>
         <li><a class="nav-link" href="#Introduction">Introduction</a></li>
@@ -236,26 +234,5 @@ statement_4_runs_if_condition_is_false; }</code>
         </article>
       </section>
     </main>
-    <script>
-        window.onresize = function() {
-            if(window.innerWidth >= 768) {
-                document.getElementById("navbar").style.display = ''
-                document.getElementById("openNav").style.display = ""
-                document.getElementById("closeNav").style.display = "";
-            };
-        }
-        function open_nav(){
-            document.getElementById("openNav").style.display = "none";
-            document.getElementById("navbar").style.display = "block";
-            document.getElementById("closeNav").style.display = "block";
-        };
-
-        function close_nav(){
-            document.getElementById("navbar").style.display = "none";
-            document.getElementById("openNav").style.display = "block";
-        };
-        
-      
-    </script>
   </body>
 <html>
