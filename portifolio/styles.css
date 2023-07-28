@@ -127,11 +127,15 @@ body{
   margin-right: 12px;
 }
 
+#contact-info > a:hover{
+  color: black;
+  cursor: pointer;
+}
+
 /*PROJECTS*/
 #projects{
   padding-top: 64px;
   margin: 0 32px 128px;
-
 }
 #projects h3{
   margin-bottom: 32px;
@@ -140,21 +144,34 @@ body{
   font-family: 'Righteous', cursive;
   letter-spacing: 2;
 }
+
+.projects-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+  justify-content: space-around;
+}
+
 .project-card{
   box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 6px, rgba(0, 0, 0, 0.6) 0px 1px 2px;
   padding: 16px;
-  text-align: center;
-  max-width: 900px;
-  margin: auto;
+  max-width: 650px;
 }
-.project-tile{
+
+.project-img{
+  width: 100%;
+  margin-bottom: 1.5rem;
+  object-fit: cover;
+}
+.project-title{
+  font-size: 1.2rem;
   display: block;
-  margin: 16px auto 0px;
+  margin: 0 auto 8px;
 }
-.project-tile a{
-  text-decoration: underline;
-  letter-spacing: 1;
-  text-underline-offset: 4px;
+
+.project-description{
+  line-height: 140%;
+  font-size: 0.9rem;
 }
 /*CONTACT SECTION*/
 #contact{
@@ -192,6 +209,22 @@ body{
   padding: 8px;
   border-radius: 4px;
   border: none;
+}
+
+#submit{
+  background: linear-gradient(45deg, var(--secondary-color), var(--primary-color));
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  padding: 0.5em;
+  border-radius: 4px;
+  margin-top: 8px;
+}
+
+#submit > span{
+  vertical-align: -20%;
+  font-size: 1.5rem;
 }
 
 /*FOOTER*/

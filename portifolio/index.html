@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UFT-8">
-    <meta name="viewport" content="width=device-width, inticial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="FreeCodeCamp Personal Portfolio Webpage Project">
     <title>Portfolio</title>
     <link rel="stylesheet" href="./styles.css">
@@ -30,13 +30,60 @@
           <a target="_blank" id="email-contact">
             <i class="material-symbols-outlined">
 mail</i> Email</a>
-        <a id="profile-link" target="_blank">
+        <a id="profile-link" href="https://github.com/AnaCarol2001" target="_blank">
           <i class="devicon-github-original"></i> GitHub
         </a>
         </div>
       </section>
       <section id="projects">
         <h3>Check out some of my work!</h3>
+        <div class="projects-container">
+          <div class="project-card">
+            <figure>
+              <img class="project-img" src="./images/survey_form.png" alt="">
+              <caption>
+                <a href="https://anacarol2001.github.io/freeCodeCamp/surveyForm" target="_blank">
+                  <h4 class="project-title">Survey Form Project <span class="material-symbols-outlined">open_in_new</span></h4>
+                </a>
+                <p class="project-description">The objective was to build a survey form as the freeCodeCamp Survey Form. So, I made a survey form to evaluate the Responsive Web Design Course.</p>
+              </caption>
+            </figure>
+          </div>
+          <div class="project-card">
+            <figure>
+              <img class="project-img" src="./images/tribute_page.png" alt="">
+              <caption>
+                <a href="https://anacarol2001.github.io/freeCodeCamp/tributePage" target="_blank">
+                  <h4 class="project-title">Tibute Page Project <span class="material-symbols-outlined">open_in_new</span></h4>
+                </a>
+                <p class="project-description">The goal was to make a tribute page as the freeCodeCamp's tribute page to Dr. Norman Borlaug. To achieve this, I made a dark theme version of it.</p>
+              </caption>
+            </figure>
+          </div>
+          <div class="project-card">
+            <figure>
+              <img class="project-img" src="./images/technical_doc.png" alt="">
+              <caption>
+                <a href="https://anacarol2001.github.io/freeCodeCamp/technicalDoc" target="_blank">
+                  <h4 class="project-title">Technical Documentation Project <span class="material-symbols-outlined">open_in_new</span></h4>
+                </a>
+                <p class="project-description">This project proposed the implementation of a technical documentation page as the freeCodeCamp JavaScript Documentation Page. For this one, as the tribute page, I made a dark theme version of it.</p>
+              </caption>
+            </figure>
+          </div>
+          <div class="project-card">
+            <figure>
+              <img class="project-img" src="./images/landing_page.png" alt="">
+              <caption>
+                <a href="https://anacarol2001.github.io/freeCodeCamp/landing_page" target="_blank">
+                  <h4 class="project-title">Product Landing Page Project <span class="material-symbols-outlined">open_in_new</span></h4>
+                </a>
+                <p class="project-description">The objective was to build a landing page that works similarly to the freeCodeCamp Original Trombones landing page. For this, I redesigned the page of the same fictitious company and implemented it.</p>
+              </caption>
+            </figure>
+          </div>
+        </div>
+        
       </section>
       <section id="contact">
         <header>
@@ -50,6 +97,7 @@ mail</i> Email</a>
           <input name="email" type="email" placeholder="exemple@exemple.eg">
           <label for="email-body">Message:</label>
           <textarea name="email-body" rows="8" cols="50" placeholder="Hi, I'm..."></textarea>
+          <button type="submit" id="submit"><span class="material-symbols-outlined">arrow_outward</span> ENVIAR</button>
         </form>
       </section>
     </main>
